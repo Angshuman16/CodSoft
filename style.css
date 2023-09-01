@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .final-container{
+    scroll-snap-type: y mandatory;
+    /* overflow-y: auto; */
+   
+
+    height: 100vh;
+  }
+
+
+  .explore{
+    background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-left: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .explore:hover{
+    background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
+  }
+  
+
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+     cursor: pointer;
+
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    font-weight: bolder;
+    cursor: pointer;
+
+
+  }
+  
+  .nav-links a:hover {
+    display: block;
+    color: black; /* Change to your preferred hover color */
+  }
+ 
+  .head{
+    color:yellow;
+  }
+
+  .main-container{
+    height: 92vh;
+    display: flex;
+  }
+
+  
+.form {
+  flex: 1;
+  padding: 6rem;
+  border-radius: 10px;
+}
+
+.form h1 {
+  margin:4px;
+  margin-left:rem;
+  color: purple;
+  font-weight: bolder;
+
+
+}
+
+.form label, .form input, .form textarea {
+  display: block;
+  padding: 4px;
+  margin: 4px;
+  width: 350px;
+  height: 2rem;
+  
+}
+
+.form input::placeholder,form textarea::placeholder{
+  padding: 5px;
+
+}
+
+
+.submit {
+  background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+ padding: 10px 20px;
+ margin: 10px;
+ margin-left:7rem;
+
+ font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.submit:hover{
+  background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
+}
+
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 75vh;
+
+  border-radius: 10px;
+}
+
+.social{
+  display: flex;
+ 
+}
+.social img{
+  width:29px;
+  padding-top: 12px;
+  padding-left: 5px;
+  border-radius: 9px;
+}
+  
+
+
+  
+   
+
+   .auto-type{
+    color: orangered;
+    font-size: 150%;
+    font-weight: bold;
+   }
+   .names{
+    color: orangered;
+   }
+
+   .btn{
+    background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-left: 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+   .btn:hover{
+    background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
+   }
+
+   .abtTitle{
+    width: 45vw;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8rem;
+   
+    border: 1px black;
+    height:80vh;
+   }
+   .abtTitle h2{
+      
+    color: brown;
+   }
+
+   .who{
+    color: orangered;
+    padding-bottom: 9px;
+   }
+   .illustration{
+    padding-left:20px;
+
+   }
+   #services-heading{
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #C850C0;
+    font-size:50px;
+   }
+
+
+   .services-card {
+    margin: 2rem;
+    width: 22rem;
+    padding: 20px;
+    height:32rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  
+
+
+}
+
+
+.contactform h1{
+
+  font-family: 'Titillium Web', sans-serif; 
+  color:orangered;
+}
+
+  .contactform form div{
+    padding: 8px 0;
+    color:black;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.contactform .infos img{
+  width:29px;
+  padding-top: 12px;
+  padding-left: 5px;
+  border-radius: 9px;
+  
+
+} 
+
+.contactform form div input{
+    width: 23vw;
+    border-radius: 4px;
+    
+   
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+#form-check{
+  flex-direction: row;
+  color: red;
+  font-size: 15px;
+  
+}
+
+#form-check input{
+ 
+  width:20px;
+  margin: 3px 0;
+  color: orangered;
+  font-size: 15px;
+}
+
+
+.services-card:hover{
+  transform: scale(1.1);
+}
+
+.icon img {
+    width: 17rem;
+    height: 17rem;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #2980b9;
+}
+
+section{
+  height: 100vh;
+  scroll-snap-align: start;
+  
+}
+
+
+   
+
+ 
+  
+  #cont {
+    padding: 2rem;
+    height:92vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    background-image: url('back2.jpg');
+     filter: blur(6px);
+    -webkit-filter: blur(6px); 
+  
+    /* Full height */
+   
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover; 
+  }
+
+  #bgtext {
+    background-color: whitesmoke; /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    font-size:140%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+  
+  
+  .footer {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-links a:hover {
+    color: #f39c12; /* Change to your preferred hover color */
+  }
+  
+  .footer-text {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .main{
+    background-color: #fff;
+    height: 92vh;
+    display: flex;
+    margin-left: 9rem;
+  }
